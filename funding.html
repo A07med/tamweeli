@@ -135,16 +135,7 @@
     const submitBtn = document.getElementById('submitBtn');
     const amountInput = document.getElementById('amount');
     
-    // التحقق من الحد الأقصى للتمويل
-    amountInput.addEventListener('input', function(e) {
-      const value = parseFloat(e.target.value);
-      if (value > 30000) {
-        e.target.setCustomValidity('الحد الأقصى للتمويل هو 30,000 ريال عماني');
-        e.target.value = 30000;
-      } else {
-        e.target.setCustomValidity('');
-      }
-    });
+    
     
     amountInput.addEventListener('blur', function(e) {
       const value = parseFloat(e.target.value);
