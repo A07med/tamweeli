@@ -60,7 +60,7 @@
         <div>
           <label for="amount">قيمة التمويل المطلوبة (بالعملة المحلية)</label>
           <input id="amount" name="amount" type="number" min="" max="30000" step="1000" required placeholder=" الحد الأقصى 30,000">
-          <div class="file-info" style="margin-top: 4px;">الحد الأقصى للتمويل: 30,000 ريال عماني</div>
+          <div class="file-info" style="margin-top: 4px;">مثال: 30,000  </div>
         </div>
       </div>
 
@@ -137,13 +137,7 @@
     
     
     
-    amountInput.addEventListener('blur', function(e) {
-      const value = parseFloat(e.target.value);
-      if (value > 30000) {
-        e.target.value = 30000;
-        alert('الحد الأقصى للتمويل هو 30,000 ريال عماني. تم تعديل القيمة تلقائياً.');
-      }
-    });
+
     
     // عرض اسم الملف المرفوع
     fileInput.addEventListener('change', function(e) {
